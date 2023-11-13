@@ -1,0 +1,11 @@
+.panel{
+    width: 82%;
+    height: 100%;
+
+}
+.menuLateral{
+    width: 18%;
+    height: 100%;
+    background-color: #202123;
+    /* cor fundo 202123 */
+}

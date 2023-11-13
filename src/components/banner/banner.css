@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,700&family=Signika+Negative&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.banner{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    padding-top: 30vh;
+    background-image: url('../../images/backIndex.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Roboto', sans-serif;
+
+}
+.banner h1, .banner p, .start{
+    margin: 0.5vw;
+}
+.banner p{
+    font-size: 1.7vw;
+    font-weight: 300;
+}
+.banner h1{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 4vw;
+    font-weight: 700;
+}
+
+.start{
+    width: 7vw;
+    height: 4.5vh;
+    background-color: #000;
+    border: #000;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.start:hover{
+    background-color:transparent;
+    color: #000;
+    border: 1px solid #000;
+}
