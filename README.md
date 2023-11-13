@@ -1,6 +1,7 @@
-# Getting Started with Create React App
+# PARA EXECUTAR
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+npm i
+npm start
 
 ## Available Scripts
 
