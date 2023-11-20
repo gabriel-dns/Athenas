@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Typewriter from 'typewriter-effect';
 import './panel.css'
 
 
@@ -56,15 +57,22 @@ function MenuLateral(){
     <section className="panel">
       <h1>Leitor de PDF</h1>
 
-
       <input type="file" accept=".pdf" onChange={handleFileChange} />
-
 
       {pdfText && (
         <div>
           <h2>Texto do PDF:</h2>
 
-          <div className="pdf-text">{pdfText}</div>
+          <div className="pdf-text">
+          <Typewriter
+          onInit={(typewriter) =>{
+            typewriter
+              .changeDelay(1)
+              .typeString(pdfText)
+              .start();
+          }} 
+          />
+          </div>
         </div>
       )}
 
