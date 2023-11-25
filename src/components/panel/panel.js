@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
+import './panel.css'
 import Typewriter from 'typewriter-effect';
 import Loading from '../loading/loading'
-import './panel.css'
 
 const pdfjs = await import('pdfjs-dist/build/pdf');
 const pdfjsWorker = await import('pdfjs-dist/build/pdf.worker.entry');
 
 pdfjs.GlobalWorkerOptions.workerSrc = pdfjsWorker;
+
 
 function MenuLateral(){
   return(
@@ -26,14 +27,14 @@ function MenuLateral(){
   )
 }
 
-function Panel() {
+ function Panel() {
   const [pdfText, setPdfText] = useState('');
   const [removeLoading, setRemoveLoading] = useState(false);
+  
 
-  const handleFileChange = async (e) => {
+    const handleFileChange = async (e) => {
     const file = e.target.files[0];
     if (file) {
-      setRemoveLoading(true);
       const reader = new FileReader();
       reader.onload = async (event) => {
         const pdfData = new Uint8Array(event.target.result);
@@ -47,16 +48,19 @@ function Panel() {
         setPdfText(text);
         setTimeout(() => {setRemoveLoading(false)}, 3000);
       };
-      reader.readAsArrayBuffer(file);  
+      reader.readAsArrayBuffer(file);
     }
   };
-
-  
 
   return (
     <section className="panel">
       <h1>Leitor de PDF</h1>
-      <input type="file" accept=".pdf" onChange={handleFileChange} />
+
+
+      <input type="file" accept=".pdf" onChange={handleFileChange}/>
+
+{removeLoading && <Loading/>}
+
 
       {pdfText && (
         <div>
@@ -72,19 +76,10 @@ function Panel() {
           }} 
           />
           </div>
-
-      <input type="file" accept=".pdf" onChange={handleFileChange}/>
-      
-      {removeLoading && <Loading/>}
-      {pdfText && (
-        <div>
-          <h2>Texto do PDF:</h2>
-          
-          <div className="pdf-text">{pdfText}</div>
-
         </div>
       )}
-      
+
+
     </section>
   );
 }
