@@ -7,29 +7,17 @@ const header = () => (
         <nav>
             {/* LOGO / TITULO */}
             <div className="logo">
-                <h1>ATHENAS</h1>
-                <p>Resolução de Problemas</p>
+                <h1>ATHENA</h1>
             </div>
 
             {/* MENU NAVEGAÇÃO */}
             <div className="menu">
                 <ul className="itens">
-                    <li> <a><span>Home</span> </a> </li>
-                    <li> <a>Proposito</a> </li>
-                    <li> <a>Contato</a> </li>
-                    <li><Link to='/panel'><a> <button>TRY OUT</button> </a> </Link> </li>
+                    <li><Link to='/panel'><a> <button>COMEÇAR</button> </a> </Link> </li>
                 </ul>
             </div>
         </nav>
     </header>
 )
-
-
-
-
-
-
-
-
 
 export default header

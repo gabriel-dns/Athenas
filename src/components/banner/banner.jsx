@@ -1,27 +1,26 @@
 import './banner.css'
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 
 const banner = () => (
     <section className='banner'>
-
         <p>
-            Projetado para estudantes
+            O Athena é um facilitador de estudos projetado para uma experiência dinâmica e multímidia
         </p>
 
         <h1>
-        Facilitador de Leitura
+            Sua companhia de estudos
         </h1>
 
         <Link to='/panel'>
-        <button className='start'>
-            Comece já!
-        </button>
+            <button className='start'>
+                Comece já!
+            </button>
         </Link>
 
     </section>
 
-    )
-    
-        
+)
+
+
 export default banner

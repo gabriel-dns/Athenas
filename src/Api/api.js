@@ -1,15 +1,14 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'http://localhost:3001', 
+  baseURL: 'http://127.0.0.1:8080', 
   headers: {
     'Content-Type': 'application/json',
+    "Access-Control-Allow-Origin": "*"
   },
 });
 
+export const getTooltip = (data) => api.post('/tooltip', data);
+export const getSummarize = (data) => api.post('/summarize', data);
 
-
-export const getTooltip = (data) => api.get('/tooltip', data);
-export const getSummarize = (data) => api.get('/summarize', data);
-
-export default {getTooltip, getSummarize, api};
+export default { getTooltip, getSummarize, api };
