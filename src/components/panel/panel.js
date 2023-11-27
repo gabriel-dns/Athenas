@@ -68,7 +68,7 @@ function MenuLateral(){
             <Text
             words= {response.data.words}
             text={text}
-            tooltips= {response.data.combined}  
+            tooltips= {response.data.tooltips}  
   
             />
           )
