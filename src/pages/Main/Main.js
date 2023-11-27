@@ -4,7 +4,7 @@ import './css/main.module.css';
 
 export default function Main(){
    return ( 
-   <body>
+   <body className='bodyMain'>
     <Header/>
     <Banner/>
     </body>

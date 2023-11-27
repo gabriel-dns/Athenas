@@ -1,11 +1,129 @@
 .panel{
     width: 82%;
     height: 100%;
+    background-color: rgba(52,53,65,1);
+   
+    color: #fff;
+}
+.headerMenu{
 
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.newChat{
+    border: none;
+    width: 90%;
+    height: 80%;
+     border-radius: 15px; 
+    background-color: black;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0.5vw;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.newChat:hover{
+    background-color: rgb(32, 33, 35);
 }
 .menuLateral{
     width: 18%;
     height: 100%;
-    background-color: #202123;
+    background-color: #000000
     /* cor fundo 202123 */
+}
+.headerPanel{
+    width: 80%;
+    height: 7vh;
+    background-color: rgba(52,53,65,0.85);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 1vw;
+    position: absolute;
+    
+}
+.panelText{
+    display: flex;
+    justify-content: center; 
+    flex-direction: column;
+    align-items: flex-start; 
+    width: 100%;
+    height: 80%;
+    padding: 0 20%;
+    padding-top: 7vh;
+
+}
+.inputPdf{
+    height: 10vh;
+    pad: 1vw 0;
+    width: 80.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: fixed;
+    bottom: 0;
+    background-color: rgba(52,53,65,1);
+}
+.inputWrapper{
+    width: 65%;
+    height: 70%;
+    border: 1px solid rgb(85,85,97);
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1vw;
+    color: rgb(127,127, 135);
+    font-weight: bold;
+}
+
+input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.custom-file-input input {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0); 
+}
+
+.custom-file-input {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+.custom-file-input::before {
+    content: '➔';
+    display: inline-block;
+    background: #3f404d;
+    color: #000000;
+    border-radius: 5px;
+    padding: 3px 7px;
+    outline: none;
+    white-space: nowrap;
+    -webkit-user-select: none;
+    cursor: pointer;
+    text-align: center;
+    font-weight: bold;
+}
+
+.pdf-text{
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
 }

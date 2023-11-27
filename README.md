@@ -5,8 +5,8 @@
   - > terminar a estilização da tela de leitura do pdf
 
  # SECUNDARIO 
-- > BOLINHA DE LOADING  
-- > delay do texto
+ BOLINHA DE LOADING   (FEITO) 
+ delay do texto       (FEITO) 
 - > BOTÃO DE NOVAS ABAS
 
 # responsavel: GABRIEL

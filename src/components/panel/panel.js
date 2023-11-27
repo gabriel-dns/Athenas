@@ -2,12 +2,15 @@ import React, { useState } from 'react';
 import './panel.css'
 import Typewriter from 'typewriter-effect';
 import Loading from '../loading/loading'
+import {Text, Tooltip,TextoComSubstituicao} from './textRender/text'
+import {getTooltip, getSummarize}  from '../../Api/api'
 
 const pdfjs = await import('pdfjs-dist/build/pdf');
 const pdfjsWorker = await import('pdfjs-dist/build/pdf.worker.entry');
 
-pdfjs.GlobalWorkerOptions.workerSrc = pdfjsWorker;
 
+pdfjs.GlobalWorkerOptions.workerSrc = pdfjsWorker;
+var selected ='tooltip'
 
 function MenuLateral(){
   return(
@@ -16,11 +19,19 @@ function MenuLateral(){
       <div className='headerMenu'>
         
         <button className='newChat'>
-        <spam>+</spam>  New tab
+
+        <spam>◯ New Tab</spam>   ◗
         </button>
-        <button className='closeOpen'>
-          X
+        <button onClick={() => {selected="sumarize"; console.log(selected)} } className='newChat'>
+
+        <spam >Sumarização</spam>   ◗
         </button>
+
+        <button onClick={() =>{selected="tooltip"; console.log(selected)}} className='newChat'>
+        <spam>Indexação</spam>   ◗
+        </button>
+
+        
 
       </div>
     </div>
@@ -28,7 +39,8 @@ function MenuLateral(){
 }
 
  function Panel() {
-  const [pdfText, setPdfText] = useState('');
+  const [pdfText, setPdfText] = useState();
+  
   const [removeLoading, setRemoveLoading] = useState(false);
   
 
@@ -45,39 +57,130 @@ function MenuLateral(){
           const pageText = await page.getTextContent();
           pageText.items.forEach(item => {text += item.str + ' ';});
         }
-        setPdfText(text);
-        setTimeout(() => {setRemoveLoading(false)}, 3000);
-      };
+
+      const dataRequest = { data: {text} };
+      if(selected == 'tooltip'){
+        setPdfText("")
+        getTooltip(dataRequest)
+        .then((response) =>  {
+  
+          setPdfText(
+            <Text
+            words= {response.data.words}
+            text={text}
+            tooltips= {response.data.combined}  
+  
+            />
+          )
+          
+          console.log('Sucess: ', response.data)
+        }
+        )
+        .catch((error) =>  {
+          setPdfText("Não foi Possivel Ler o PDF")
+          console.error('deu erro:', error);
+        } );
+        }else{
+          setPdfText("")
+          getSummarize(dataRequest)
+          .then((response) =>  {
+  
+            setPdfText(response.data[0].data)
+            console.log('Sucess: ', response.data)
+          }
+          )
+          .catch((error) =>  {
+            setPdfText("Não foi Possivel Ler o PDF")
+            console.error('deu erro:', error);
+          } );
+        }
+      }
+     
+     
+
+
+
       reader.readAsArrayBuffer(file);
     }
   };
-
+  const textoOriginal = "Este é um grande texto com algumas palavras importantes.";
+  const palavrasImportantes = ["grande", "importantes"];
   return (
     <section className="panel">
-      <h1>Leitor de PDF</h1>
+      <div className='headerPanel'>
+      <h1>Athenas </h1>
+      </div>
+      
 
 
-      <input type="file" accept=".pdf" onChange={handleFileChange}/>
+     
 
-{removeLoading && <Loading/>}
+<div className='panelText'>
 
 
-      {pdfText && (
+
+{/* {<Text
+ words= {["CRIADA2","alvos"]}
+text='A biologia molecular é um ramo da biologia que estuda a estrutura e função das moléculas biológicas, incluindo DNA, RNA e proteínas. Seus CRIADA2 fundamentos se baseiam nos princípios da quimica organica, bioquimica, genética molecular e tecnologia de DNA recombinante. Na biologia molecular, é fundamental entender como as moléculas interagem entre si dentro das células vivas para compreender os processos celulares. A análise dos ácidos nucleicos (DNA e RNA) permite descobrir novos genes, estudar mutações genéticas associadas a doenças hereditárias alvos terapêuticos.'
+tooltips= {[
+  {
+    "concept": "alvos",
+    "tooltip": "Significado termo sexo sexo sexo"
+  },
+  {
+    "concept": "CRIADA2",
+    "tooltip": "Significado termo2 sexo sexo sexo"
+  }
+
+
+]}  /> } */}
+
+
+{pdfText && (
         <div>
-          <h2>Texto do PDF:</h2>
-
+          
+        
           <div className="pdf-text">
-          <Typewriter
+            {pdfText} 
+          {/* {
+           <Typewriter
           onInit={(typewriter) =>{
             typewriter
-              .changeDelay(1)
+              .changeDelay(0.05)
               .typeString(pdfText)
               .start();
           }} 
-          />
+          /> } */}
+          
           </div>
         </div>
       )}
+</div>
+{removeLoading && <Loading/>}
+
+<div className='inputPdf'>
+
+  <div className='inputWrapper'>
+       
+        <p>Selecione seu PDF...</p>
+       
+
+        
+        <div className='custom-file-input'>
+        <input type="file" accept=".pdf" onChange={handleFileChange} /> 
+        
+        </div>
+       
+    
+
+ 
+
+
+  </div>
+  
+
+</div>
+
 
 
     </section>
