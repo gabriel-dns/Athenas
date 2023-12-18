@@ -1,0 +1,181 @@
+{
+    "summarize": [
+{
+    "data": "A análise dos ácidos nucleicos (DNA e RNA) permite descobrir novos genes, estudar mutações genéticas associadas a doenças hereditárias ou infecciosas e identificar possíveis alvos terapêuticos.A biologia molecular e as suas técnicas têm contribuído para identificação de agentes infecciosos, mutações específicas que levam a proteínas com funções prejudicadas ou predisposição a doenças oncológicas, estabelecer prognóstico de doenças ou elencar o melhor tratamento a ser seguido especificamente para um paciente.No geral, podemos dizer que as técnicas da biologia molecular focam na obtenção, identificação e caracterização do material genético quer seja de um paciente ou de um agente infeccioso que esteja lhe causando uma infecção ou doença.Essa pesquisa pode ser ampliada para sua quantificação e, em casos mais específicos, seguir para a técnica de sequenciamento para identificar variantes genéticas que causem refratariedade a determinado tratamento, como ocorre no caso da pesquisa do HIV.Além disso, quando o foco da pesquisa são mutações em determinados genes do paciente, podemos simplesmente detecta-la em uma reação de PCR"
+}]
+  ,
+  "tooltip": {
+    "words": ["DNA", "RNA","bioquimica","nucleicos","genes","mutacoes","hereditarias ","infecciosas", "ampliada","refratariedade","geopolítica","geoeconomia","sumária","Otan","Coalisão","terrorismo doméstico", "comércio exterior","hegemonia", "exploração geográfica","genovês","onerosas","monarcas"  ],
+    "tooltips": [
+      
+      {
+        "concept": "exploração geográfica",
+        "tooltip": "Exploração é o ato de pesquisar ou viajar, com o intuito de descobrir e conhecer regiões desconhecidas, com intuito científico, econômico e/ou militar.",
+        "video": ""
+      },
+      {
+        "concept": "genovês",
+        "tooltip": "relativo a Gênova (Itália) ou o que é seu natural ou habitante.",
+        "video": ""
+      },
+      {
+        "concept": "onerosas",
+        "tooltip": "é tudo aquilo que implica gastos, despesas",
+        "video": ""
+      },
+
+      {
+        "concept": "monarcas",
+        "tooltip": "Um monarca é o chefe de uma monarquia, forma de governo na qual um Estado é governado por um indivíduo normalmente de forma vitalícia ou até sua abdicação e que herda o trono, normalmente, por nascimento",
+        "video": ""
+      },
+      {
+        "concept": "VAZIO",
+        "tooltip": "VAZIO",
+        "video": ""
+      },
+      {
+        "concept": "VAZIO",
+        "tooltip": "VAZIO",
+        "video": ""
+      },
+      {
+        "concept": "VAZIO",
+        "tooltip": "VAZIO",
+        "video": ""
+      },
+      {
+        "concept": "geopolítica",
+        "tooltip": "A geopolítica corresponde ao estudo das relações de poder entre os territórios e da articulação entre os diferentes Estados nacionais. As diferentes estratégias utilizadas pelos Estados nacionais para a atuação no campo internacional fazem parte dos estudos da geopolítica.",
+        "video": "https://www.youtube.com/embed/Uhgh6cAOhCg"
+      },
+      {
+        "concept": "geoeconomia",
+        "tooltip": "A geoeconomia é o estudo dos aspectos espaciais, temporais e políticos das economias e dos recursos. A formação da geo-economia como um ramo da geopolítica é frequentemente atribuída a Edward Luttwak, economista e consultor americano, e Pascal Lorot, economista e cientista político francês",
+        "video": ""
+      },
+      {
+        "concept": "sumária",
+        "tooltip": "significa resumido; breve; feito sem formalidades; simples",
+        "video": ""
+      },
+      {
+        "concept": "superpotência",
+        "tooltip": "país que se destaca das demais potências por seu poderio econômico e militar, em especial no que diz respeito a armas atômicas; supergrande.",
+        "video": ""
+      },
+      {
+        "concept": "Otan",
+        "tooltip": "Organização do Tratado do Atlântico Norte",
+        "video": "https://www.youtube.com/embed/5YI1_Oq1VBY"
+      },
+      {
+        "concept": "Coalisão",
+        "tooltip": "aliar-se, unir-se",
+        "video": ""
+      },
+      {
+        "concept": "terrorismo doméstico",
+        "tooltip": "Terrorismo doméstico é um termo que define atentados terroristas cometidos por cidadãos ou residentes permanentes de um Estado contra o seu próprio povo ou governo, sem influência estrangeira",
+        "video": ""
+      },
+      {
+        "concept": "comércio exterior",
+        "tooltip": "é a área responsável por estudar e promover as transações comerciais entre países.",
+        "video": ""
+      },
+      {
+        "concept": "hegemonia",
+        "tooltip": "supremacia, influência preponderante exercida por cidade, povo, país etc.",
+        "video": ""
+      },
+
+    {
+      "concept": "DNA",
+      "tooltip": "O DNA (ácido desoxirribonucleico) é um tipo de ácido nucleico relacionado com o armazenamento e transmissão das informações genéticas. O DNA é um ácido nucleico encontrado, geralmente, na forma de dupla-hélice.",
+      "video": "https://www.youtube.com/embed/hvKWk4jEGmY"
+    },
+    {
+      "concept": "RNA",
+      "tooltip": "O RNA (ácido ribonucleico) é um ácido nucleico, assim como o DNA. Essa molécula apresenta informações com as quais é possível coordenar a produção de proteínas. Assim sendo, o RNA também participa do fluxo de informações genéticas pelos indivíduos.",
+      "video": "https://www.youtube.com/embed/hvKWk4jEGmY"
+    },
+    {
+      "concept": "bioquimica",
+      "tooltip": "ciência (ou ramo) interdisciplinar que utiliza princípios e métodos da química na investigação das transformações que ocorrem nas substâncias e moléculas provenientes de seres vivos e de seus processos metabólicos; química biológica, química fisiológica",
+      "video": ""
+    },
+    {
+      "concept": "nucleicos",
+      "tooltip": "Os ácidos nucleicos são moléculas complexas responsáveis por armazenar e transmitir as informações genéticas, bem como garantir sua tradução. O armazenamento e a transmissão dessas informações são garantidos por meio do DNA",
+      "video": "https://www.youtube.com/embed/2Thtx5mfngM"
+    },
+    {
+      "concept": "genes",
+      "tooltip": "O gene é um segmento de uma molécula de DNA (ácido desoxirribonucleico) responsável pelas características herdadas geneticamente. ",
+      "video": ""
+    },
+    {
+      "concept": "mutacoes",
+      "tooltip": "Mutação é uma alteração que surge no material genético dos organismos. Pode ocorrer naturalmente ou ser induzida. Ela tem papel primordial na evolução. ",
+      "video": ""
+    }, {
+      "concept": "hereditarias",
+      "tooltip": "A hereditariedade é a transmissão de características de pais para filhos. Essas informações genéticas e fenotípicas transmitidas são chamadas de hereditárias.",
+      "video": ""
+    },
+    {
+      "concept": "infecciosas",
+      "tooltip": "As doenças infecciosas são aquelas desencadeadas por agentes infecciosos, ou seja, que são resultado de uma infecção. O agente infeccioso, ao adentrar o organismo humano, pode não causar nenhuma manifestação, sendo, nesse caso, observado um quadro de uma infecção assintomática.",
+      "video": ""
+    },
+    {
+      "concept": "fragmento",
+      "tooltip": "parte de um todo",
+      "video": ""
+    },
+    {
+      "concept": "ampliada ",
+      "tooltip": "aumentado",
+      "video": ""
+    },
+    {
+      "concept": "refratariedade",
+      "tooltip": "é uma falha na transfusão de plaquetas, que resulta no baixo incremento da contagem plaquetária do paciente",
+      "video": "https://www.youtube.com/embed/4insPVOTwTk"
+    }
+  
+  ]
+
+
+    
+  },
+  "list": { 
+    "data": [
+      {
+      "concept": "palavra ou termo",
+      "tooltip": "Siginificado palavra ou termo"
+      },
+      {
+        "concept": "palavra ou termo",
+        "tooltip": "Siginificado palavra ou termo"
+      },
+      {
+          "concept": "palavra ou termo",
+          "tooltip": "Siginificado palavra ou termo"
+      }
+  ]
+  },
+   "sources": {
+       "data": 
+       {
+          "video": {
+            "embed": "iframe que vou pedir pro breno jogar fora e rota http"
+          },
+          "name": "nome nome nome"
+       },
+       "wiki": {
+        "link": "rota da pagina"
+       }
+   }
+}

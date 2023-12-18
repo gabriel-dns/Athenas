@@ -43,10 +43,13 @@
     background-color: rgba(52,53,65,0.85);
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: space-between;
     padding-left: 1vw;
     position: absolute;
     
+}
+.headerPanel h1 span{
+    color: #00FA9A;
 }
 .panelText{
     display: flex;

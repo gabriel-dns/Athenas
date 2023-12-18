@@ -33,3 +33,7 @@
   overflow-y: scroll;
   line-height: 2;
 }
+
+iframe{
+ width: 90%;
+}
